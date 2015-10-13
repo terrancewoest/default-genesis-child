@@ -1,0 +1,39 @@
+// Color Variables //
+
+$primary-color: #000;
+$secondary-color: #fff;
+
+
+// Font Variables //
+
+$title-font: 'serif';
+$default-font: 'sans-serif';
+
+// Screen Width Variables //
+
+$tablet-width: 768px;
+
+$desktop-width: 992px;
+
+$large-desktop-width: 1200px;
+
+
+// Media Query Mixins //
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin large-desktop {
+	@media (min-width: #{$large-desktop-width}) {
+		@content;
+	}
+}
